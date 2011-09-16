@@ -7,10 +7,9 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
-gem 'imagine', :path => '/home/jadams/rails/imagine'
+gem 'imagine', '0.1.5'
 
 gem 'haml'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
