@@ -7,7 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
-gem 'imagine', '0.1.6'
+gem 'imagine', '~> 0.1.6'
 #gem 'imagine', :path => '/home/jadams/rails/imagine'
 
 gem 'haml'

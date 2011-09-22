@@ -141,7 +141,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0)
   haml
   heroku
-  imagine (= 0.1.6)
+  imagine (~> 0.1.6)
   jquery-rails
   pg
   rails (= 3.1.0)
