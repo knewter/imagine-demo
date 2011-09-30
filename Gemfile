@@ -9,7 +9,7 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'imagine', '~> 0.2.0'
+gem 'imagine', '~> 0.2.1'
 #gem 'imagine', :path => '/home/jadams/rails/imagine'
 
 gem 'haml'
