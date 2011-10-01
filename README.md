@@ -9,3 +9,6 @@ To get started, you just need to run the migrations and start the server:
     bundle exec rails s
 
 Then visit http://localhost:3000/imagine/albums, create a new album.
+
+## EXTERNAL DEPENDENCIES
+Imagine uses Dragonfly, which assumes you have ImageMagick installed on your server.
