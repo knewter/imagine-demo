@@ -7,6 +7,8 @@
     = csrf_meta_tags
 
 %body
+  - flash.each do |key, message|
+    %div{ :class => "flash #{key}" }= message
   %h2 Imagine
   %h3 A Rails Engine to provide drop in image gallery support
   %h4 (with lots of pluggable album types provided by gem extensions)

@@ -1,4 +1,4 @@
 ImagineDemo::Application.routes.draw do
   mount Imagine::Engine, :at => "/imagine"
-  root :to => 'imagine/albums#index'
+  root :to => 'high_voltage/pages#show', :id => 'home'
 end
