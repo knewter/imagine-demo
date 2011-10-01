@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title ImagineDemo
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+%body
+  %h2 Imagine
+  %h3 A Rails Engine to provide drop in image gallery support
+  %h4 (with lots of pluggable album types provided by gem extensions)
+
+  = yield
