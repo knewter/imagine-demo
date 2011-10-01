@@ -13,4 +13,8 @@
   %h3 A Rails Engine to provide drop in image gallery support
   %h4 (with lots of pluggable album types provided by gem extensions)
 
+  - if on_album_show?
+    %ul
+    - links_to_plugins.each do |pl|
+      %li= pl
   = yield
