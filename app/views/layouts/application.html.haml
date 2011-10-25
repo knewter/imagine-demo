@@ -7,14 +7,26 @@
     = csrf_meta_tags
 
 %body
-  - flash.each do |key, message|
-    %div{ :class => "flash #{key}" }= message
-  %h2 Imagine
-  %h3 A Rails Engine to provide drop in image gallery support
-  %h4 (with lots of pluggable album types provided by gem extensions)
+  .topbar
+    .fill
+      .container
+        %a.brand{ :href => '/' } Imagine
+        %ul.nav
+          %li
+            %a First
+          %li
+            %a Second
+  .container
+    - flash.each do |key, message|
+      %div{ :class => "flash #{key}" }= message
 
-  - if on_album_show?
-    %ul
-    - links_to_plugins.each do |pl|
-      %li= pl
-  = yield
+    - if on_album_show?
+      %ul.pills
+        - links_to_plugins.each do |pl|
+          - klass = ''
+          - if !params[:plugin] && pl[0].to_s == Imagine.default_plugin.to_s
+            - klass = 'active'
+          - elsif params[:plugin].to_s == pl[0].to_s
+            - klass = 'active'
+          %li{ :class => klass }= pl[1]
+    = yield

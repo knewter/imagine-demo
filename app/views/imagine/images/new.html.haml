@@ -1,0 +1,14 @@
+= form_for [@album, @image], :html => { :multipart => true } do |f|
+  %fieldset
+    %legend Add an image to #{@album.name}
+    %p Either upload your own file, or provide a URL to an image on the internet.
+    .clearfix
+      = f.label :file
+      .input
+        = f.file_field :file
+    .clearfix
+      = f.label :file_url
+      .input
+        = f.text_field :file_url
+    .actions
+      = f.submit "Attach Image", :class => 'btn primary'

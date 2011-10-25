@@ -6,7 +6,7 @@ module ApplicationHelper
   def links_to_plugins
     ::Imagine::Plugins.registered.map do |plugin|
       name = plugin.name.gsub(/^imagine_/, '')
-      link_to(name, params.merge(:plugin => name))
+      [name, link_to(name, params.merge(:plugin => name))]
     end
   end
 end

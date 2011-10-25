@@ -1,2 +1,19 @@
-%ul.links
-  %li= link_to 'Start a new album', imagine.new_album_path
+.hero-unit
+  %h1 Imagine
+  %p
+    Imagine is a Rails engine that provides drop-in image gallery support.  It is
+    extensible, and aims to be the de facto standard for Rails image galleries.
+  %p
+    %a.btn.primary.large Learn More
+
+%h4 Check it out
+=link_to 'Start a new album', imagine.new_album_path, :class => 'btn primary'
+
+%h4 Features
+%ul.features
+  %li Mountable rails engine.  Drops in to provide photo album support.
+  %li Plugin system allows new album view types to be built as minimal rails engines of their own.
+  %li Set default album style in your app.
+  %li View any album in any style by passing the plugin in params.
+  %li Sexy.
+  %li Won't murder anyone.
