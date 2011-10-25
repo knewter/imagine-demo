@@ -10,8 +10,8 @@ end
 
 gem 'twitter-bootstrap-rails'
 
-#gem 'imagine', '~> 0.2.1'
-gem 'imagine', :path => '/home/jadams/rails/imagine'
+gem 'imagine', '~> 0.2.1'
+#gem 'imagine', :path => '/home/jadams/rails/imagine'
 
 gem 'haml'
 gem 'heroku'
