@@ -12,13 +12,11 @@
       .container
         %a.brand{ :href => '/' } Imagine
         %ul.nav
-          %li
-            %a First
-          %li
-            %a Second
+          %li= link_to("Source Code", "http://github.com/knewter/imagine")
+          %li= link_to("Built by Isotope11", "http://www.isotope11.com")
   .container
     - flash.each do |key, message|
-      %div{ :class => "flash #{key}" }= message
+      %div{ :class => "alert-message #{key}" }= message
 
     - if on_album_show?
       %ul.pills
