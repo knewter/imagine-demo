@@ -73,7 +73,7 @@ GEM
     high_voltage (1.0.1)
     hike (1.2.1)
     i18n (0.6.0)
-    imagine (0.2.1)
+    imagine (0.2.2)
       dragonfly (~> 0.9.0)
       haml-rails
       imagine-basic_list_view (~> 0.1.0)
@@ -176,7 +176,7 @@ DEPENDENCIES
   haml
   heroku
   high_voltage
-  imagine (~> 0.2.1)
+  imagine (~> 0.2.2)
   jquery-rails
   pg
   rails (= 3.1.0)
