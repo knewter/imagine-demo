@@ -4,16 +4,31 @@
     Imagine is a Rails engine that provides drop-in image gallery support.  It is
     extensible, and aims to be the de facto standard for Rails image galleries.
   %p
-    %a.btn.primary.large Learn More
+    %a.btn.primary.large{ :href => '/imagine/albums/11' } See it in action
 
-%h4 Check it out
-=link_to 'Start a new album', imagine.new_album_path, :class => 'btn primary'
+%h4 Try it out
+= link_to 'Start a new album', imagine.new_album_path, :class => 'btn primary'
 
-%h4 Features
-%ul.features
-  %li Mountable rails engine.  Drops in to provide photo album support.
-  %li Plugin system allows new album view types to be built as minimal rails engines of their own.
-  %li Set default album style in your app.
-  %li View any album in any style by passing the plugin in params.
-  %li Sexy.
-  %li Won't murder anyone.
+.row
+  .span6
+    %h4 Features
+    %ul.features
+      %li Mountable rails engine.  Drops in to provide photo album support.
+      %li Plugin system allows new album view types to be built as minimal rails engines of their own.
+      %li Set default album style in your app.
+      %li View any album in any style by passing the plugin in params.
+  .span5
+    %h4 Contributing
+    %p
+      If you want to contribute, you can do so a few different ways.  You could
+      = link_to "fork us on github", "http://www.github.com/knewter/imagine"
+      , you could build a new album view plugin, or you could just
+      = link_to "give us some feedback or suggestions.", "http://www.github.com/knewter/imagine/issues"
+  .span5
+    %h4
+      A project by
+      = link_to "Isotope11", "http://www.isotope11.com"
+    %p
+      Imagine is an open source project from Isotope11.  You can see our other open source
+      projects
+      = link_to "on our community page.", "http://www.isotope11.com/community"

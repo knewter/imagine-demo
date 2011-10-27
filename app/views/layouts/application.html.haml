@@ -12,8 +12,11 @@
       .container
         %a.brand{ :href => '/' } Imagine
         %ul.nav
+          %li= link_to("Documentation", "/pages/documentation")
           %li= link_to("Source Code", "http://github.com/knewter/imagine")
+          %li= link_to("Report a Bug / Request a Feature", "http://github.com/knewter/imagine/issues")
           %li= link_to("Built by Isotope11", "http://www.isotope11.com")
+          %li= link_to(image_tag("http://travis-ci.org/knewter/imagine.png"), "http://travis-ci.org/knewter/imagine")
   .container
     - flash.each do |key, message|
       %div{ :class => "alert-message #{key}" }= message
